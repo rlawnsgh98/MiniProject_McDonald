@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>더 플레이팅</title>
+
+    <!-- 부트스트랩 css CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- 커스텀 스타일 css -->
+    <link rel="stylesheet" href="css/custom.css">
+
+
+</head>
+<body>
+    <h1 class="d-none">더 플레이팅</h1>
+    <div class="container-fluid bg-greenbean text-white" id="banner">
+        <div class="container mx-auto d-flex justify-content-between align-items-center">
+            <p class="banner-text mb-0">지금 플레이팅 가입하고 최대 10만원 쿠폰 받으세요</p>
+
+            <button type="button" id="close_banner" class="bg-transparent border-0 text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z"/>
+                </svg>
+            </button>
+
+        </div>
+    </div>
+
+    <header>
+        <div class="container mx-auto bg-light">
+            <div class="header-top">
+                <ul class="only-pc  d-flex flex-end justify-content-end list-unstyled text-dark my-3">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">고객센터</a></li>
+                </ul>
+            </div>
+
+            <div class="header-logo">
+                <div class="main-logo mx-auto">
+                    <img src="images/THE PLATING.svg" alt="the plating">
+                </div>
+            </div>
+
+            <div class="header-nav mt-5 mb-3">
+                <!-- 부트스트랩 네비바 소스코드 복붙 -->
+                <nav class="navbar navbar-expand-lg navbar-light ">
+                    
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="navbar-nav mr-auto">
+
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">그릇/홈세트 <span class="sr-only">(current)</span></a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">국내도자기그릇</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                          <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                            수입주방용품
+                          </a>
+                          <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">독일</a>
+                            <a class="dropdown-item" href="#">프랑스</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">병행수입</a>
+                          </div>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link"  href="#">기타주방용품</a>
+                        </li>
+                      </ul>
+
+                      <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2 rounded-pill" type="search" placeholder="Search" aria-label="Search">
+
+                        <button class="btn btn-outline-false my-2 my-sm-0 position-relative" style="left:-50px" type="submit ">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                            </svg>
+                        </button>
+
+                      </form>
+                    </div>
+                  </nav>
+            </div>
+        </div>
+
+    </header>
+    <!-- carousel -->
+    <div class="container-fluid px-0">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                  <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="images/slide1.jpg" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
+    </div>
+    <!-- end carousel -->
+
+    <section id="main" class="m-5">
+      <h2 class="d-none">the plate product lists</h2>
+      <!-- 첫번쨰 아티클 -->
+      <article class="container">
+        <h3 class="main-title">건강한 밥상</h3>
+        <p class="sub-title">플레이팅으로부터, 이제 바꿔보세요!</p>
+
+        <!-- bootstrap navs > javascript behavior > pills -->
+        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item " role="presentation">
+            <button class="nav-link active rounded-pill px-4" id="pills-home-tab" data-toggle="pill" data-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">그릇</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill px-4" id="pills-profile-tab" data-toggle="pill" data-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">홈세트</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link rounded-pill px-4" id="pills-contact-tab" data-toggle="pill" data-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">냄비</button>
+          </li>
+        </ul>
+
+        <div class="tab-content" id="pills-tabContent">
+          <!-- tab 1 -->
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <!-- tab1 card deck -->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/single1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">일식그릇 단품</h5>
+                  <p class="card-text">39,500 원</p>
+
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/single2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">라멘그릇 단품</h5>
+                  <p class="card-text">20,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/single3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">나무그릇 단품</h5>
+                  <p class="card-text">25,500 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- tab 2 -->
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <!-- card deck 2 -->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/set1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">백도자기 그릇세트 12p</h5>
+                  <p class="card-text">100,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/set2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">밀양 그릇세트 14p</h5>
+                  <p class="card-text">120,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/set3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">넝쿨2도 그릇세트 10p</h5>
+                  <p class="card-text">180,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- tab 3 -->
+          <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+            <!-- card deck 3 -->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/pots1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">스테인레스 세트 4p</h5>
+                  <p class="card-text">80,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/pots2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">세라믹 코팅팬 세트 3p</h5>
+                  <p class="card-text">150,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/pots3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">스테인레스 냄비+전골냄비 3p</h5>
+                  <p class="card-text">215,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <!-- 두번째 아티클 -->
+      <article class="container my-5">
+        <h3 class="main-title">혼밥족들을 위한</h3>
+        <p class="sub-title">데일리 식기세트</p>
+
+        <!-- bootstrap navs > javascript behavior > pills -->
+        
+
+        <div class="tab-content" id="pills-tabContent">
+          <!-- tab 1 -->
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <!-- tab1 card deck -->
+            <div class="card-deck">
+              <div class="card">
+                <img src="images/single1.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">일식그릇 단품</h5>
+                  <p class="card-text">39,500 원</p>
+
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/single2.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">라멘그릇 단품</h5>
+                  <p class="card-text">20,000 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <img src="images/single3.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">나무그릇 단품</h5>
+                  <p class="card-text">25,500 원</p>
+                  <div class="badges-buttons d-flex justify-content-between">
+
+                    <div class="badge p-0">
+                      <span class="badge badge-secondary p-3 bg-ship">무료배송</span></h6>
+                      <span class="badge badge-secondary py-3 px-4 bg-special">특가</span></h6>
+                    </div>
+
+                    <div class="button ">
+                      <button type="button" class="btn btn-secondary rounded-circle py-2" id="cart">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket2" viewBox="0 0 16 16">
+                          <path d="M4 10a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 0 1 2 0v2a1 1 0 0 1-2 0v-2zm3 0a1 1 0 1 1 2 0v2a1 1 0 0 1-2 0v-2z"/>
+                         <path d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-.623l-1.844 6.456a.75.75 0 0 1-.722.544H3.69a.75.75 0 0 1-.722-.544L1.123 8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.163 8l1.714 6h8.246l1.714-6H2.163z"/>
+                       </svg>
+                      </button>
+
+                      <button type="button" class="btn btn-secondary rounded-circle py-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                          <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                         <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                        </svg>
+                      </button>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
+          
+        </div>
+
+      </article>
+
+      <!-- 세번째 아티클 -->
+      <article>
+        <div class="container-fluid p-0">
+          <img src="images/card-event.png" class="img-fluid" alt="카드사 별 할부혜택">
+        </div>
+      </article>
+
+      <article>
+        <div class="container mt-5">
+          <div class="row">
+
+            <div class="youtube d-flex col-sm">
+              <div class="channel-info">
+                <p class="info-title">더 플레이팅TV 
+                  <button class="border rounded-circle p-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                    </svg>
+                  </button>
+                </p>
+                <p class="info-desc">도자기 그릇 플레이팅, 집밥 예쁘게 먹기,
+                  테이블 세팅 기술에 대한 모든것</p>
+                  <button>더 플레이팅 채널 구독하기</button>
+              </div>
+            </div>
+
+            <div class="embed-video embed-responsive embed-responsive-16by9 col-sm">
+              <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/SB3XSz-c-Zc?start=40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+          </div>
+        </div>
+      </article>
+    </section>
+
+
+    <aside>
+      <div class="container-fluid bg-greenbean">
+        <div class="container d-flex justify-content-between">
+
+          <div class="news p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+              <path d="M11.536 14.01A8.473 8.473 0 0 0 14.026 8a8.473 8.473 0 0 0-2.49-6.01l-.708.707A7.476 7.476 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303l.708.707z"/>
+              <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.483 5.483 0 0 1 11.025 8a5.483 5.483 0 0 1-1.61 3.89l.706.706z"/>
+              <path d="M8.707 11.182A4.486 4.486 0 0 0 10.025 8a4.486 4.486 0 0 0-1.318-3.182L8 5.525A3.489 3.489 0 0 1 9.025 8 3.49 3.49 0 0 1 8 10.475l.707.707zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06z"/>
+            </svg>
+
+          </div>
+          <div class="move-top p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-chevron-up" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+    </aside>
+
+    <footer class="m-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+
+            <div class="customer">
+              <h4>고객센터</h4>
+              <p class="phone"><a href="tel:"></a></p>
+            </div>
+            
+            <div class="working">
+
+            </div>
+
+            <div class="kakao">
+              <p>카카오톡 @더플레이팅 친구추가하고 소식과 혜택을 받아보세요</p>
+            </div>
+
+          </div>
+
+          <div class="col-sm">
+
+            <div class="brand">
+              <h2>더플레이팅</h2>
+            </div>
+
+            <address>
+              <p>사업자등록번호 : 211-81-08241 | 통신판매신고번호 : 제 2021-광주서구-0668 호</p>
+              <p>개인정보보호책임자 : 최대한 | 개인정보관리이메일 : </p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 부트스트랩 Script CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- main.js 연결 -->
+    <script src="script/main.js"></script>
+</body>
+</html>

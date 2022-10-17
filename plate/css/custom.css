@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+:root{
+
+}
+
+.bg-greenbean{
+    background-color: #7E8C24;
+}
+
+.bg-special{
+    background-color: #CD3232;
+}
+
+.bg-ship{
+    background-color: #C4C4C4;
+}
+
+.banner-text{
+    font-size : .875rem;
+}
+
+#topNav{
+    font-size: .875rem;
+}
+
+.only-pc a{
+    color:inherit;
+
+}
+
+.only-pc > li {
+    margin-left: .5rem;
+}
+
+.main-logo{
+    width : 320px;
+}
+
+.main-logo img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.main-title{
+    color : #959595;
+    font-size : 2rem;
+}
+
+.sub-title{
+    font-size : 3rem;
+}
+
+/* 메인 상품목록 탭 */
+.nav{
+    gap : 1rem;
+}
+.nav-pills .nav-link {
+    background: #C4C4C4;
+    border: 0;
+    border-radius: 0.25rem;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #7E8C24;
+}
+
+.news{
+    color:white;
+}
+.move-top{
+    color:white;
+    background-color: black;
+}
+
+@media screen and (max-width:576px) {
+    html{
+        font-size: 20px;
+    }
+}
