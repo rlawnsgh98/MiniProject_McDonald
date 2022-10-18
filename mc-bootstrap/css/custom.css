@@ -1,3 +1,6 @@
+html{
+    font-size : 20px;
+}
 .card{
     border-radius: 15px;
 }
@@ -31,5 +34,9 @@
 	font-size: .9rem;
 }
 .visualArea .inner_text {
-	padding: 5rem 2rem;
+	padding: 3rem 2rem;
+}
+
+.card-title, .card-text{
+    text-align: center;
 }
