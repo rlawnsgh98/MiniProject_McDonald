@@ -8,13 +8,25 @@ html{
 .visualArea.what_visual {
 	background-image: url("../images/bg_visual_whats02.jpg");
     height : 220px;
-    background-repeat: no-repeat;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .visualArea.menu_visual {
 	background-image: url("../images/bg_visual_menu01.jpg");
     height: 220px ;
-    background-repeat: no-repeat;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.visualArea.story_visual {
+	background-image: url("../images/bg_visual_storymain.jpg");
+	height : 220px;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .titwhat {
@@ -30,6 +42,13 @@ html{
 	font-weight: bold;
 	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
+
+.titstory {
+	color: white;
+	font-size: 2.5rem;
+	font-weight: bold;
+	text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+}
 .titmenu_sub {
 	font-size: .9rem;
 }
@@ -39,4 +58,44 @@ html{
 
 .card-title, .card-text{
     text-align: center;
+}
+
+.story_sum h2 {
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+
+.story_sum p {
+	color: #808080;
+	font-size: .8rem;
+	margin: 1rem 0 0 0;
+}
+.more .more_btn{
+	border:none;
+	background : none;
+}
+
+/* footer */
+.foot-info{
+	color: white;
+	font-size: .7rem;
+}
+
+.foot-social .social{
+	column-gap: .5rem;
+}
+
+.story_text .list_tit {
+	font-size: 2rem;
+	font-weight: bold;
+	margin-bottom: 2rem;
+}
+.story_text .list_sub_tit {
+	font-size: 1rem;
+	font-weight: 500;
+}
+
+.story_text p {
+	font-size: .8rem;
+	color: #808080;
 }
