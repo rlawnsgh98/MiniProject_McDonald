@@ -5,7 +5,7 @@ MORE.addEventListener("click", function(){
 
 	const DISPLAY = document.querySelector(".hidden-post")
 	DISPLAY.classList.remove("d-none")
-
+	MORE.classList.add("d-none")
 	postIndex++;
 	
 })
