@@ -112,7 +112,7 @@ html{
 		justify-content: space-around;
 	}
 	.foot-social .social{
-		column-gap: 2.5rem;
+		column-gap: 1rem;
 		align-items: center;
 	}
 	.navbar-brand img{
@@ -126,7 +126,20 @@ html{
 	.nav-link{
 		margin : 0 !important;
 		padding-left: 0 !important;
-		text-decoration:;
 	}
 
+	.story_list .d-flex{
+		display : inherit !important; 
+	}
+	.story_img img{
+		width : 500px;
+	}
+	
+	.story_list .d-flex{
+		display: grid !important;
+	}
+
+	.story_text{
+		order: 2;
+	}
 }
